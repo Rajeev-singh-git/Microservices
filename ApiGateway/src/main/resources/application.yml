@@ -21,7 +21,7 @@ spring:
           uri: lb://HOTEL-SERVICE
 #          uri: http://localhost:8081
           predicates:
-            - Path=/hotels/**
+            - Path=/hotels/**,/staff/**
 
 
         - id: RATING-SERVICE
