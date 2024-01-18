@@ -59,7 +59,10 @@ Add dependency
 
 Create `application.yml` file in that.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/98b9b9b9-2179-40ae-b09b-0318efbfab00/Untitled.png)
+
+
+![Screenshot 2024-01-16 012358](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/87e967a2-a27a-47e6-a457-a0887ca8947c)
+
 
 ## Step 3 → Add annotation `@EnableConfigServer`  in main class of Spring boots
 
@@ -147,19 +150,23 @@ spring:
 
 ## Step 5 :→ Add repeating configuration in github application.yml
 
-Eureka Config is repeating in multiple application.xml file so adding there
+Eureka Config is repeating in multiple application.xml file so adding there.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/9e8dba62-6605-423d-8d10-c96d7f9fd7af/Untitled.png)
+
+![Screenshot 2024-01-16 015523](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/c0e758eb-4e1d-46f2-bd91-eb5030750c15)
+
 
 Before adding eurka = config url showing default profile
 
 [rajeev:8085/actuator/default](http://rajeev:8085/actuator/default)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/511c7579-30aa-4ac6-884e-71b5830f3541/Untitled.png)
+![Screenshot 2024-01-16 015354](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/a1f8d1e7-3561-43b9-b552-9dc119ac9836)
+
 
 Post adding eurka = config url showing default profile
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/71343a04-7266-4ba4-b625-8eadf610fecf/Untitled.png)
+
+![Screenshot 2024-01-16 020325](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/9d5681db-d239-44e5-a2cb-59531770595f)
 
 Just for understanding, adding same configuration in dev profile of git
 
@@ -167,4 +174,4 @@ Just for understanding, adding same configuration in dev profile of git
 
 Now, checking dev url of config
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/9338d6fa-7752-4538-a7c1-28d38419406f/Untitled.png)
+![Screenshot 2024-01-16 020407](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/544333a0-c66e-4d08-b35b-39b57d35b92f)
