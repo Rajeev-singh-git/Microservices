@@ -175,3 +175,65 @@ Just for understanding, adding same configuration in dev profile of git
 Now, checking dev url of config
 
 ![Screenshot 2024-01-16 020407](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/544333a0-c66e-4d08-b35b-39b57d35b92f)
+
+
+# Reading Config from GitHub
+
+## How can we  utilize configurations stored on GitHub for a given service?
+
+### Step 1 : → Add  “**Config Client” dependency to the service**
+
+- **Config Client  =** Client that connects to a Spring Cloud Config Server to fetch the application's configuration.
+
+In UserService POM.XML
+
+```xml
+<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
+```
+
+### Step 2 : →In `application.yml`, of UserService add property
+
+`spring.config.import`
+
+Add configuration server URL
+
+http://localhost:8085
+
+```xml
+spring:
+   config:
+      import: configserver:http://localhost:8085
+```
+
+*** This property is essential when using Spring Cloud Config to fetch configuration from a remote server. It tells the application where to find the configuration server.
+
+### Step 3: → In application.yml of UserService, comment Discovery config. we will load it from github.
+
+```xml
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+```
+
+There are multiple config file on github. To load a specific configuration from GitHub, you can specify the desired config file. The following code ensures the loading of the production configuration.
+
+```xml
+profiles:
+    active: prod
+```
+
+If no profile name is specified, the system will default to loading the configuration from 'application.yml.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/c14519cd-dd2e-41e9-a136-c7df54aecaba/Untitled.png)
+
+Given that the Eureka configuration is consistent across all service classes, replicate Steps 1, 2, and 3. This approach eliminates the need for redundant configuration entries, allowing direct retrieval from GitHub.
+
+[Official Documentation](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
