@@ -30,6 +30,10 @@ Port : 8761
 
 Port : 8084
 
+## ConfigServer
+
+[Steps to create Config Sever](https://github.com/Rajeev-singh-git/Microservices/blob/main/ConfigServer/README.md#what-is-config-server)
+
 ## Getting Started
 
 1. Clone the repository.
