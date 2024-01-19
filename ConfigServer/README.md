@@ -232,7 +232,8 @@ profiles:
 
 If no profile name is specified, the system will default to loading the configuration from 'application.yml.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/c14519cd-dd2e-41e9-a136-c7df54aecaba/Untitled.png)
+![Screenshot 2024-01-19 062517](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/b614e8cc-3edb-4c3f-a4e1-eae2474fd9a2)
+
 
 Given that the Eureka configuration is consistent across all service classes, replicate Steps 1, 2, and 3. This approach eliminates the need for redundant configuration entries, allowing direct retrieval from GitHub.
 
