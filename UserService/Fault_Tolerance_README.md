@@ -230,9 +230,12 @@ resilience4j:
 
 If after hitting the URL, it doesn’t get response from the service.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/5de699e0-a5b3-418a-ad71-6edce096aeee/Untitled.png)
+![Screenshot 2024-01-21 004020](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/ef50f40d-17da-40ed-85ac-d6b117fc1de1)
 
 It retries 3 times after 5 second each time, as it is configured. Then Fall Back method is called.
+
+
+![Screenshot 2024-01-21 004238](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/076a8fe8-2b94-49a5-a76d-7625132fea61)
 
 
 [Official Documentation](https://resilience4j.readme.io/docs/circuitbreaker)
