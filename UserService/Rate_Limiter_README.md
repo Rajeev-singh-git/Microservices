@@ -91,9 +91,9 @@ resilience4j:
 
 ## Step 5:→ Use Jmeter for testing
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/2e90fa3b-a4b3-4730-889c-b35a7797bc7e/Untitled.png)
+![Screenshot 2024-01-21 022224](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/15f26909-ef9b-461a-9d5f-1a7e8bf9e9a7)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/6f075b2e-0891-4294-bdb0-00e1749ee0c1/Untitled.png)
+![Screenshot 2024-01-21 022244](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/9a8434cd-7e2c-469d-88ba-97d401cc30a4)
 
 ### Result : →
 
@@ -105,10 +105,18 @@ For rest user Fallback method is called
 
 User 1 : →
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/7daf4e15-4bd8-4e73-b23e-8a23fd3c3dfd/Untitled.png)
+![Screenshot 2024-01-21 022329](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/e0719782-d3f5-488f-8f92-ff91f6c1ed1c)
 
 User 2 :→
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/56582230-d213-417e-a934-b05ef66b70aa/Untitled.png)
+![Screenshot 2024-01-21 022648](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/34d54a3a-1367-462f-8d18-c2961e66bfab)
 
-For rest of the user, fallback method response is coming.
+User 3 :→
+
+
+For user 3 and therest of the user, fallback method response is coming.
+
+![Screenshot 2024-01-21 022740](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/9516ed48-2bc1-4344-825a-ae663e37aac5)
+
+
+[Official Documentation](https://resilience4j.readme.io/docs/ratelimiter)
