@@ -39,6 +39,11 @@ Port : 8084
 
 [Steps to create Fault Tolerance](https://github.com/Rajeev-singh-git/Microservices/blob/main/UserService/Fault_Tolerance_README.md)
 
+## Rate Limiter
+
+[Steps to create Rate Limiter](https://github.com/Rajeev-singh-git/Microservices/blob/main/UserService/Rate_Limiter_README.md)
+
+
 ## Getting Started
 
 1. Clone the repository.
