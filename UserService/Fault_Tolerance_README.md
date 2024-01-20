@@ -1,8 +1,7 @@
 # Fault Tolerance in Microservices
 
-It refers to the ability of a microservices architecture to continue functioning and providing service even when some of its individual services encounter errors or failures. This resilience is crucial for ensuring the overall stability and availability of the system.
+Fault tolerance refers to the ability of a microservices architecture to continue functioning and providing service even when some of its individual services encounter errors or failures. This resilience is crucial for ensuring the overall stability and availability of the system.
 
-Here's how fault tolerance translates in the microservices world:
 
 **Challenges:**
 
@@ -41,7 +40,7 @@ Here's how fault tolerance translates in the microservices world:
 ![Screenshot 2024-01-20 175354](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/a2c50424-48ab-4b40-8302-5d01ebfddd46)
 
 
-It is commonly used in microservices architectures to manage interactions between services and prevent cascading failures.
+The Circuit Breaker pattern  is commonly used in microservices architectures to manage interactions between services and prevent cascading failures.
 
 1. **Closed State (Service is Open):**
   - In this state, requests are allowed to flow from **`HotelService`** to **`UserService`**.
@@ -56,8 +55,6 @@ It is commonly used in microservices architectures to manage interactions betwee
   - If the test requests continue to fail, the circuit breaker transitions back to the "Open" state.
 
 # Implementing Circuit Breaker using Resilience4J
-
-
 
 ## Step 1 : Add dependency
 
