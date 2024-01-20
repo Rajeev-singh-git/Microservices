@@ -58,3 +58,9 @@ resilience4j:
       ratingHotelBreaker:
         baseConfig: default
         registerHealthIndicator: true
+
+  retry:
+    instances:
+      ratingHotelService:
+        max-attempt: 3
+        wait-duration: 5s

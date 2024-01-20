@@ -168,4 +168,71 @@ Health Check :→
 
 ![Screenshot 2024-01-20 234425](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/284d0619-dccc-4494-a842-a10d586cac28)
 
+
+# Retry
+
+We can use retry if we are not sure if service is down.
+
+## When to use Retry?
+
+**1. Not sure if service is down:** Retry is a valid option when you're unsure if the service is truly down or if the issue is due to a transient problem like a network glitch.
+
+**2. Network glitch:** Highlighting the possibility of network glitches explicitly reinforces the idea that retries can be helpful in such situations.
+
+**3. Slow response:** Slow responses can also be addressed by retries, as the service might be temporarily overloaded or experiencing delays.
+
+**However, it's important to add some caveats:**
+
+- **Idempotent operations:** Only retry for operations that are safe to repeat, meaning they won't cause unintended side effects.
+- **Exponential backoff:** Implement retries with exponential backoff to avoid overloading the service with repeated requests.
+- **Maximum attempts:** Set a reasonable maximum number of retries to prevent infinite loops.
+- **Monitoring:** Track retry rates and logs to understand the nature of failures and adjust strategies accordingly.
+
+## Implementing Retry
+
+## Step 1 :→ Add @Retry annotation
+
+Add @Retry annotation on the method which is calling other Services.
+
+```java
+@Retry(name= "ratingHotelService", fallbackMethod = "ratingHotelFallBackMethod")
+```
+
+```java
+int retryCount=1;
+
+    @GetMapping("/{userId}")
+    @Retry(name= "ratingHotelService", fallbackMethod = "ratingHotelFallBackMethod")
+    public ResponseEntity<User> getSingleUser(@PathVariable String userId){
+        logger.info("Retry count : {}",retryCount);
+        retryCount++;
+        User user = userService.getUser(userId);
+        return ResponseEntity.ok(user);
+    }
+```
+
+## Step 2 :→ Add fallback method
+
+If after retry still it is not able to get response, Fallback method will be called
+
+## Step 3 :→ Add Configuration in UserService Apploication.yml
+
+```yaml
+resilience4j:
+  retry:
+    instances:
+      ratingHotelService:
+        max-attempt: 3
+        wait-duration: 5s
+```
+
+### Result →
+
+If after hitting the URL, it doesn’t get response from the service.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/5de699e0-a5b3-418a-ad71-6edce096aeee/Untitled.png)
+
+It retries 3 times after 5 second each time, as it is configured. Then Fall Back method is called.
+
+
 [Official Documentation](https://resilience4j.readme.io/docs/circuitbreaker)
