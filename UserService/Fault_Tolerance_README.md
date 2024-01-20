@@ -37,9 +37,11 @@ Here's how fault tolerance translates in the microservices world:
 
 **Remember:** Designing for fault tolerance from the ground up is key in microservices architecture. By incorporating these principles and tools, you can build resilient and reliable systems that can gracefully handle unexpected challenges.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/e3a5bd91-94a3-4fd7-bab0-27797274e459/Untitled.png)
 
 # Circuit Breaker pattern
+
+![Screenshot 2024-01-20 175354](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/a2c50424-48ab-4b40-8302-5d01ebfddd46)
+
 
 It is commonly used in microservices architectures to manage interactions between services and prevent cascading failures.
 
@@ -57,7 +59,7 @@ It is commonly used in microservices architectures to manage interactions betwee
 
 # Implementing Circuit Breaker using Resilience4J
 
-[Official Documentation :] (https://resilience4j.readme.io/docs/circuitbreaker)
+
 
 ## Step 1 : Add dependency
 
@@ -149,16 +151,21 @@ resilience4j:
 
 We Can Check health information of Circuit Breaker  on = [localhost:8080/actuator/health](http://localhost:8080/actuator/health)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/a78f7d54-ad8f-48de-8255-6f81952271f7/Untitled.png)
+![Screenshot 2024-01-20 234124](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/909f9ed8-3f29-4177-a966-af0e2c6b840d)
+
 
 ### Result : →
 
 When Circuit is working fine
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/c6ae925f-f194-4940-9345-bf0642f83698/Untitled.png)
+![Screenshot 2024-01-20 234248](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/fbb2e23e-8b48-4630-9014-95c200109073)
 
 When some service is down
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/dcf82b34-6ac5-4738-9438-d6a70c1be44c/Untitled.png)
+![Screenshot 2024-01-20 234341](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/89ee3e6e-018f-4ccc-8491-67ab0b8e33ed)
 
 Health Check :→
+
+![Screenshot 2024-01-20 234425](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/284d0619-dccc-4494-a842-a10d586cac28)
+
+[Official Documentation](https://resilience4j.readme.io/docs/circuitbreaker)
