@@ -1,6 +1,4 @@
-# Fault Tolerance
-
-# What is Fault Tolerance?
+# Fault Tolerance in Microservices
 
 It refers to the ability of a microservices architecture to continue functioning and providing service even when some of its individual services encounter errors or failures. This resilience is crucial for ensuring the overall stability and availability of the system.
 
