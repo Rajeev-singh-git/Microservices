@@ -37,6 +37,8 @@ Port : 8084
 
 ## Fault Tolerance
 
+[Steps to create Fault Tolerance](https://github.com/Rajeev-singh-git/Microservices/blob/main/UserService/Fault_Tolerance_README.md)
+
 ## Getting Started
 
 1. Clone the repository.
