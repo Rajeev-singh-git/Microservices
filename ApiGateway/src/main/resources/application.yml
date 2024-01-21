@@ -40,4 +40,13 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+#okta configuration for aoi gateway
 
+
+okta:
+  oauth2:
+    issuer: https://dev-60370986.okta.com/oauth2/default
+    audience: api://default
+    client-id : 0oaeltirtamcF33AH5d7
+    client-secret : pTkn1cKltDTfi2GbRpYMOJ68ANr7Y-fr4vEj8cIIcIInoTZM-VL_zvqAMxVZA_bv
+    scopes: openid, profile, email, offline_access
