@@ -32,40 +32,44 @@ In directory → People (Resource owner) , we can add user
 
 - The "people" in OAuth refers to the end-users or resource owners who have control over the resources they own or have access to. These resources can be anything from user data to services.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/344ab3be-5e69-421c-89a1-3b86de989e4f/Untitled.png)
+![1](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/30e8d110-ba31-4a51-9d09-c430d9a087d7)
 
 Groups
 
 - Groups in OAuth are collections of users with similar characteristics or permissions. Some OAuth implementations, especially in enterprise scenarios, allow the assignment of permissions to groups, making it easier to manage access control at scale.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/3d955c80-5122-4311-8535-4310b38edd15/Untitled.png)
+![Screenshot 2024-01-21 150944](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/819af5f3-d6bc-42c4-8c06-9ee11f886cac)
 
 Applications (Client)
 
 - An application, also known as a client in OAuth, is a software entity that requests access to the resources on behalf of the resource owner. This could be a web application, a mobile app, a server-side application, or any other type of software that needs to interact with protected resources.
 - Software programs interacting with APIs on behalf of users. Imagine a to-do list app accessing your Google Calendar.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/64d7c038-a9ed-4910-ba37-efa673e30ff5/Untitled.png)
+![Screenshot 2024-01-21 151145](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/5bb3df3e-cba9-46ca-b8c5-d2c1eccc043b)
+
 
 Security API
 
 - API (Application Programming Interface) or Resource Server in OAuth is the server hosting the resources that the client wants to access. The API is responsible for validating and responding to requests for those resources, ensuring that access is granted only to authorized clients.
 - Security in OAuth is paramount and is maintained through the use of various security mechanisms, such as token-based authentication and authorization. OAuth relies on secure communication, token validation, and other measures to protect sensitive data and ensure that only authorized entities gain access to resources.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/ec208268-0a19-4f89-8c25-9d7009ce6537/Untitled.png)
+![Screenshot 2024-01-21 151418](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/76ca8836-5457-4531-a8dc-2bc04efdafd0)
+
 
 Scopes
 
 - Scopes in OAuth define the specific permissions or access rights that a client application is requesting from the resource owner. Scopes help to narrow down the requested access and allow the resource owner to make informed decisions about granting or denying access. Examples of scopes include "read", "write", "profile", etc.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/77183afc-311a-4b05-8ffb-37f16f4a55e0/Untitled.png)
+
+![Screenshot 2024-01-21 151604](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/3f32f891-27e9-4a96-a05b-4bd7379e647e)
 
 Claims
 
 - Claims are essentially pieces of information about a user or an authorization that are securely conveyed within OAuth tokens (typically JSON Web Tokens or JWTs).
 - They act as a way to communicate verified details between different parties involved in an OAuth flow.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/9372f16e-2b69-4c0e-8b06-6f30192e3cf9/Untitled.png)
+![Screenshot 2024-01-21 151711](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/042f06e6-61ab-4cce-b583-4d4ea13ae595)
+
 
 In an OAuth flow:
 
@@ -80,17 +84,18 @@ Create a new app integration in Okta, choosing OIDC (OpenID Connect) and Web App
 
 Application → Create App Integration → OIDC → Web Application
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/80e1f0de-13a4-4ed8-a250-39311111fc35/Untitled.png)
+![Screenshot 2024-01-21 153254](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/f41e1724-ef95-42a6-9bac-356fb5611cfa)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/c896490f-ae34-4714-9621-e5d325610be7/Untitled.png)
+![Screenshot 2024-01-21 185710](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/ce696796-ae4c-42cc-96df-317887fe95f4)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/a6f9da65-ae51-4cfe-b70e-0b665b1b78a4/Untitled.png)
+![Screenshot 2024-01-21 153531](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/66e92920-7fc3-41fd-883e-e629d1ee7923)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/6a63f02f-bab4-4fb2-8856-569153ddc8a0/Untitled.png)
+![Screenshot 2024-01-21 153547](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/ad0a528c-fc11-4749-9399-c6ce1639bea3)
 
 Client ID and Client Secret are important and are unique for all user.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/eb4858d7-8686-42fb-9fba-642c6e871468/Untitled.png)
+![Screenshot 2024-01-21 153646](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/3ac348d0-e68a-4e70-9421-d521fc6e14e8)
+
 
 ### Step 2.1 → Add People and Groups
 
@@ -98,33 +103,40 @@ Create groups in the directory and assign users to these groups.
 
 To add Groups and People, we need to create Groups and People first.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/ee0ba275-561b-4405-a223-745f23339117/Untitled.png)
+![Screenshot 2024-01-21 153930](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/c33aaab4-568e-406c-80b9-662efeba05fa)
+
 
 ### Step 2.2 → First Make Groups, In directory
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/2b103a72-28f1-42dc-a7dc-ac9bf1609f9c/Untitled.png)
+
+![Screenshot 2024-01-21 154227](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/9bb4d106-f8fe-4949-830c-52320b57316f)
 
 Created 2 groups, one for Normal and one for Admin user.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/02a8bd0c-09ce-4d7b-b039-2a22a08d6bf1/Untitled.png)
+![Screenshot 2024-01-21 154324](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/58543841-506c-4307-abde-5a78125159c2)
+
 
 Assign Admin and Normal to the Application
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/6a1b20a5-a730-4711-8cba-d4214764ca51/Untitled.png)
+![Screenshot 2024-01-21 154524](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/32ac9bbb-4f43-4b5c-9f0a-3cc9fc2ee04a)
+
 
 ### Step 2.3 : → In directory , create people
 
 password = qwerty321#
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/0405cbc8-5b7f-431b-85c5-b3b2f53cea0c/Untitled.png)
+![Screenshot 2024-01-21 163840](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/6221f939-d9af-49bd-92d5-9df4cfbbf131)
+
 
 ### Step 2.4:→ Already for this user, mywebapp is assigned
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/b99dfb9c-18c5-4d1c-acdb-e2061f0de97b/Untitled.png)
+
+![Screenshot 2024-01-21 164011](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/11bd2f43-2d21-404a-a346-7755a1f7aebe)
 
 In group we can see we have 1 group and 1 user assigned for Admin and Normal
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/62894e5f-6b4b-4b8f-9a3e-66cf7b6b066b/Untitled.png)
+![Screenshot 2024-01-21 164145](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/bfc9cf6f-72bd-4bc6-be6c-04af66bb535f)
+
 
 ### Step 2.5 :→ Create a scope for internal Communication
 
@@ -132,21 +144,25 @@ In Okta, create a scope for internal communication within your microservices.
 
 Security → API → Default → Edit → Add scopes
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/d357cbd7-6eab-4e74-8347-55b96f8fdbe8/Untitled.png)
+
+![Screenshot 2024-01-21 171759](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/8108ee1d-a53a-419a-9e52-5de4ca8f6031)
+
 
 ### Step 2.6 :→ Add Claim
 
 Add claims to convey verified details within OAuth tokens securely.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/e316ef12-e959-45d2-aa19-ee0a8b86d527/Untitled.png)
+![Screenshot 2024-01-21 172229](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/85d6c23a-ce57-42b8-8868-c4bf45d1c491)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/7f975ab5-be57-4a6f-99df-260e74a2365a/Untitled.png)
+![Screenshot 2024-01-21 172154](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/9d503705-2c4b-4f80-afda-8be48399a4be)
+
 
 # Implementing OKTA at API Gateway
 
 Background → Through API Gateway clint sent request
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/306c3816-60d3-4c95-bb6b-31d9f1f0149d/Untitled.png)
+
+![Screenshot 2024-01-21 171520](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/1b081c5e-1071-413a-9049-5cc3d911aca0)
 
 ## Step 1 :→ ****Add Dependencies in API Gateway POM.XML****
 
@@ -176,7 +192,7 @@ Audience we will also get from the same place
 
 Audience  api://default
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/2eb11935-181b-4371-ba7e-8f6e79f74626/Untitled.png)
+![2](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/96792407-4a11-4f8f-aad5-4a39198449eb)
 
 Client Id  and Client Secret we will get from Applications → MyWebApp (app which we created)
 
@@ -184,7 +200,8 @@ Client id = 0oaeltirtamcF33AH5d7
 
 Client Secret : pTkn1cKltDTfi2GbRpYMOJ68ANr7Y-fr4vEj8cIIcIInoTZM-VL_zvqAMxVZA_bv
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/47cb6af7-ec7e-4f1b-8d01-454847b24ae8/Untitled.png)
+![3](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/6db0b548-d941-43fb-984c-b6875446d033)
+
 
 ```yaml
 #okta configuration for aoi gateway
@@ -337,21 +354,25 @@ Username : learncodewithrajeev@gmail.com
 
 password : qwerty321#
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/241486de-792f-48c1-85f1-f5f3978862a0/Untitled.png)
+
+![4](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/aa635d5c-e3a6-43f8-8995-bf011a756120)
 
 After login : →
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/cec00be8-096e-4c64-9b5d-bcc7780efc89/Untitled.png)
+![5](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/ba55a756-9b58-485c-8a63-55f35177add1)
+
 
 We can access API Gateway through postman after adding access token in header
 
 Authorization → OAuth2
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/dea61609-ab73-4b24-8872-2add85127492/Untitled.png)
+![6](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/80d5b915-af8c-4796-8ae0-00d20cdcee68)
+
 
 http://localhost:8084/hotels
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/01bbf536-a533-419d-b567-d81390e807ad/e6a08198-ca0e-4c2a-93d4-dbb0d0f5ce36/Untitled.png)
+
+![7](https://github.com/Rajeev-singh-git/Microservices/assets/87664048/8251526a-681e-4c34-917e-ef0990428aad)
 
 # Further Reading Recommended : →
 
