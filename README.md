@@ -1,17 +1,32 @@
 # Microservices
 
-Microservice application, containing different application HotelService, RatingService, UserService 
+Microservice application, containing different application HotelService, RatingService, UserService.
 
-Have ServiceRegistry and APiGateway as well
+All application are made on Spring Boort framework but connected to different DataBase.
 
-All application are made on Spring Boort framework but connected to different DB
 
 ## HotelService
 
 HotelService is connected to Postgres SQL
 Running on port : 8081
 
+Having Two Controller class
 
+Get = http://localhost:8081/hotels = will return all hotels
+Post = http://localhost:8081/hotels  = will create hotels
+
+```json
+{
+    "name" : "Ratan Inn",
+    "location" : "Delhi",
+    "about" : "Best Hotel"
+}
+```
+Get =
+http://localhost:8081/hotels/hotelId
+http://localhost:8081/hotels/5506f562-588f-47cb-b514-640bb1f38a3a  = will return single hotel
+
+Get = http://localhost:8081/staff  = will return all Staff
 ## UserService
 
 HotelService is connected to  MySQL
